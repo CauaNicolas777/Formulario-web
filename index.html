@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="style.css">
+
+    <title>Formulário</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <fieldset>
+            <legend><b>Formulário</b></legend>
+            <p>Digite suas informções abaixo</p>
+            <br>
+
+            <form>
+            <div class="campo">
+                <label for="nome">Nome :</label>
+                <input type="text" name="nome" id="nome" class="input" maxlength="30" required>
+            </div>
+            <br>
+
+            <div class="campo">
+                <label for="email">Email:</label>
+                <input  class="input" type="email" name="email" id="email" maxlength="40" required>
+            </div>
+            <br>
+
+            <div class="campo">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" name="telefone" id="telefone" class="input" maxlength="11" required>
+            </div>
+            <br>
+            <div class="campo">
+                <label>Sexo:</label>
+                <input type="radio" id="masculino" name="genero" value="masculino" required>
+                <label for="masculino">Masculino</label>
+                <input type="radio" id="feminino" name="genero" value="feminino">
+                <label for="feminino">Feminino</label>
+                <input type="radio" id="outro" name="genero" value="outro">
+                <label for="outro">Outro</label>
+            </div>
+            
+
+            <div class="campo">
+                <label for="data_nascimento"><b>Data de Nascimento:</b></label>
+                <input type="date" name="data_nascimento" id="data_nascimento" class="user" class="input" maxlength="1" required>
+            </div>
+            <br>
+
+            <div class="campo">
+                <label for="estado">Estado:</label>
+                <input type="text" name="estado" id="estado" class="input" maxlength="10" required>
+            </div>
+            <br>
+
+            <div class="campo">
+                <label for="cidade">Cidade:</label>
+                <input type="text" name="cidade" id="cidade" class="input" maxlength="10" required>
+            </div>
+            <br>
+
+            <button class="botao" type="submit">Enviar</button>
+
+        </fieldset>
+
+    </form>
+
+    </div>
+
+</body>
+
+</html>
